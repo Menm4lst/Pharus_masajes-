@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharus - Centro de Bienestar y Terapias Alternativas | Acupuntura, Masajes y Biodecodificación</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Pharus es tu centro especializado en bienestar integral. Ofrecemos acupuntura profesional, masajes terapéuticos, biodecodificación y tarot evolutivo. Encuentra tu equilibrio con nuestras terapias naturales.">
+    <meta name="keywords" content="acupuntura, masajes terapéuticos, biodecodificación, tarot evolutivo, ventosas, auriculoterapia, moxibustión, terapias alternativas, bienestar, relajación, centro terapéutico">
+    <meta name="author" content="Pharus - Centro de Bienestar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pharus-bienestar.com/">
+    <meta property="og:title" content="Pharus - Centro de Bienestar y Terapias Alternativas">
+    <meta property="og:description" content="Descubre el equilibrio perfecto con nuestras terapias naturales. Acupuntura, masajes terapéuticos y técnicas de bienestar para tu salud integral.">
+    <meta property="og:image" content="https://pharus-bienestar.com/images/pharus-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pharus-bienestar.com/">
+    <meta property="twitter:title" content="Pharus - Centro de Bienestar y Terapias Alternativas">
+    <meta property="twitter:description" content="Descubre el equilibrio perfecto con nuestras terapias naturales. Acupuntura, masajes terapéuticos y técnicas de bienestar para tu salud integral.">
+    <meta property="twitter:image" content="https://pharus-bienestar.com/images/pharus-twitter-image.jpg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pharus - Centro de Bienestar",
+      "description": "Centro especializado en terapias alternativas y bienestar integral",
+      "url": "https://pharus-bienestar.com",
+      "telephone": "+1-234-567-8900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tu dirección aquí",
+        "addressLocality": "Tu ciudad",
+        "addressRegion": "Tu región",
+        "postalCode": "Tu código postal",
+        "addressCountry": "Tu país"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "0.0000",
+        "longitude": "0.0000"
+      },
+      "sameAs": [
+        "https://www.facebook.com/pharusbienestar",
+        "https://www.instagram.com/pharusbienestar"
+      ],
+      "serviceType": ["Acupuntura", "Masajes Terapéuticos", "Biodecodificación", "Tarot Evolutivo"]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animación de burbujas -->
+    <div class="bubbles-animation" id="bubblesAnimation"></div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Pharus</a>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="guia-bienestar.html">Tu Guía de Bienestar</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero hero-centered">
+        <div class="container">
+            <div class="hero-content fade-in text-center">
+                <h1>Descubre el bienestar a través de terapias naturales.</h1>
+                <p>Masajes terapéuticos y acupuntura con 25 años de experiencia. Vive una experiencia de relajación y sanación integral.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5491123456789" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+                    </a>
+                    <a href="https://instagram.com/pharus_bienestar" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-instagram"></i> Seguir en Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="section-white">
+        <div class="container">
+            <h2 class="text-center">Sobre Mí</h2>
+            <div class="about-container">
+                <div class="about-image" id="aboutImage">
+                    <img src="images/sobre mi.jpg" alt="Yuditana - Especialista en Acupuntura y Masajes Terapéuticos" />
+                </div>
+                <div class="about-content" id="aboutContent">
+                    <h3>Hola, soy Yuditana</h3>
+                    <p>Licenciada en Acupuntura con más de 25 años acompañando a personas en su camino de bienestar. Integro técnicas de masaje terapéutico, acupuntura y herramientas complementarias para aliviar el dolor, bajar el estrés y mejorar tu energía cotidiana.</p>
+                    <p>Mi enfoque es personalizado y amable, con explicaciones claras antes de cada sesión. Creo en el poder de las terapias naturales para restaurar el equilibrio del cuerpo y la mente.</p>
+                    <p>Atiendo en Buenos Aires, Argentina de Lunes a Viernes de 10:00 a 18:00 horas.</p>
+                    <a href="#contacto" class="btn btn-primary">Contactame</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Servicios -->
+    <section id="servicios" class="section-pattern">
+        <div class="container">
+            <h2 class="text-center">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card" id="service1">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Masajes Terapéuticos</h3>
+                        <p>Técnica manual enfocada en aliviar dolor muscular, contracturas y tensión. Reduce dolor y rigidez, mejora circulación y movilidad.</p>
+                        <p><strong>Duración:</strong> 45-60 minutos</p>
+                        <a href="https://wa.me/5491123456789" class="btn btn-primary" target="_blank">Reservar</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" id="service2">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Acupuntura</h3>
+                        <p>Agujas muy finas en puntos específicos para equilibrar el organismo. Incluye técnicas complementarias como Ventosas (cupping), Auriculoterapia y Moxibustión. Efectivo para dolor crónico, estrés, migrañas y problemas de sueño.</p>
+                        <p><strong>Técnicas incluidas:</strong> Ventosas, Auriculoterapia, Moxibustión</p>
+                        <p><strong>Duración:</strong> 45-60 minutos</p>
+                        <a href="https://wa.me/5491123456789" class="btn btn-primary" target="_blank">Reservar</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" id="service3">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Biodecodificación</h3>
+                        <p>Explora lo emocional detrás de síntomas físicos. Enfoque complementario para claridad emocional y hábitos más saludables.</p>
+                        <p><strong>Duración:</strong> 60 minutos</p>
+                        <a href="https://wa.me/5491123456789" class="btn btn-primary" target="_blank">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQs -->
+    <section id="faqs" class="section-white">
+        <div class="container">
+            <h2 class="text-center">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item" id="faq1">
+                    <div class="faq-question">
+                        <span>¿Cómo pido un turno?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puedes reservar tu turno directamente por WhatsApp haciendo clic en el botón "Reservar por WhatsApp" que encontrarás en varias secciones de la página. Te responderé a la brevedad para coordinar día y hora.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq2">
+                    <div class="faq-question">
+                        <span>¿Dónde se encuentran?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Estamos ubicados en Buenos Aires, Argentina. La dirección exacta se proporciona al confirmar el turno para proteger la privacidad del consultorio.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq3">
+                    <div class="faq-question">
+                        <span>¿La acupuntura duele?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La acupuntura generalmente causa solo una molestia leve. Las agujas son extremadamente finas y se insertan suavemente. La mayoría de las personas encuentra la experiencia relajante y no dolorosa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq4">
+                    <div class="faq-question">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, transferencia bancaria y tarjetas de débito y crédito. Los precios se comunican al momento de reservar el turno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section id="contacto" class="section-light">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lunes a Viernes: 10:00 - 18:00</p>
+                            <p>Sábados: con cita previa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+54 9 11 2345-6789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@pharus_bienestar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Pharus</h4>
+                    <p>Centro especializado en bienestar integral a través de terapias naturales y técnicas de medicina alternativa.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/5491123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/pharus_bienestar" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="guia-bienestar.html">Tu Guía de Bienestar</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Masajes Terapéuticos</a></li>
+                        <li><a href="#servicios">Acupuntura</a></li>
+                        <li><a href="#servicios">Biodecodificación</a></li>
+                        <li><a href="#servicios">Tarot Evolutivo</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pharus. Todos los derechos reservados.</p>
+                <p>Las terapias son complementarias y no reemplazan la atención médica profesional.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

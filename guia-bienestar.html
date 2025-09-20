@@ -1,0 +1,337 @@
+<!D    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Guía de Bienestar - Pharus | Técnicas, Consejos y Videos Educativos</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Explora nuestra guía completa de bienestar con videos educativos, técnicas de masaje, consejos nutricionales y ejercicios de relajación. Aprende con los expertos de Pharus.">
+    <meta name="keywords" content="guía bienestar, técnicas masaje, videos educativos, auriculoterapia, moxibustión, ventosas, aromaterapia, meditación, nutrición consciente, respiración">
+    <meta name="author" content="Pharus - Centro de Bienestar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://pharus-bienestar.com/guia-bienestar.html">
+    <meta property="og:title" content="Tu Guía de Bienestar - Técnicas y Consejos Profesionales">
+    <meta property="og:description" content="Descubre técnicas profesionales de bienestar, desde masajes terapéuticos hasta consejos nutricionales. Contenido exclusivo para tu salud integral.">
+    <meta property="og:image" content="https://pharus-bienestar.com/images/guia-bienestar-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pharus-bienestar.com/guia-bienestar.html">
+    <meta property="twitter:title" content="Tu Guía de Bienestar - Técnicas y Consejos Profesionales">
+    <meta property="twitter:description" content="Descubre técnicas profesionales de bienestar, desde masajes terapéuticos hasta consejos nutricionales. Contenido exclusivo para tu salud integral.">
+    <meta property="twitter:image" content="https://pharus-bienestar.com/images/guia-bienestar-twitter.jpg">
+    
+    <!-- Schema.org markup for Educational Content -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Tu Guía de Bienestar",
+      "description": "Contenido educativo sobre técnicas de bienestar, masajes terapéuticos y nutrición consciente",
+      "url": "https://pharus-bienestar.com/guia-bienestar.html",
+      "mainEntity": {
+        "@type": "EducationalOrganization",
+        "name": "Pharus - Centro de Bienestar",
+        "url": "https://pharus-bienestar.com"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Técnicas de Masaje"
+        },
+        {
+          "@type": "Thing", 
+          "name": "Bienestar General"
+        },
+        {
+          "@type": "Thing",
+          "name": "Nutrición Consciente"
+        }
+      ]
+    }
+    </script>YPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Guía de Bienestar | Pharus</title>
+    <meta name="description" content="Descubre técnicas, consejos y conocimientos que te ayudarán en tu camino hacia el bienestar integral. Videos, técnicas y consejos de Pharus.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animación de burbujas -->
+    <div class="bubbles-animation" id="bubblesAnimation"></div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Pharus</a>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="guia-bienestar.html" class="active">Tu Guía de Bienestar</a></li>
+                <li><a href="index.html#faqs">FAQs</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Hero Section para la página -->
+    <section class="hero-page">
+        <div class="container">
+            <div class="hero-content-page text-center">
+                <h1>Tu Guía de Bienestar</h1>
+                <p>Descubre técnicas, consejos y conocimientos que te ayudarán en tu camino hacia el bienestar integral.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tu Guía de Bienestar -->
+    <section id="guia-bienestar" class="section-white">
+        <div class="container">
+            <!-- Filtros de contenido -->
+            <div class="content-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Todos los consejos
+                </button>
+                <button class="filter-btn" data-filter="terapias">
+                    <i class="fas fa-spa"></i> Terapias
+                </button>
+                <button class="filter-btn" data-filter="bienestar">
+                    <i class="fas fa-leaf"></i> Bienestar
+                </button>
+                <button class="filter-btn" data-filter="nutricion">
+                    <i class="fas fa-apple-alt"></i> Nutrición
+                </button>
+            </div>
+            
+            <!-- Grid de contenido -->
+            <div class="content-grid" id="contentGrid">
+                <!-- Masaje con Piedras Calientes -->
+                <div class="content-card" data-category="terapias" 
+                     data-consejos='["Asegúrate de que las piedras estén a temperatura adecuada (40-50°C)", "Aplica movimientos circulares suaves, nunca presiones demasiado", "Combina con aceites esenciales como lavanda para mayor relajación", "La sesión no debe exceder los 60 minutos", "Hidrátate bien antes y después del tratamiento"]'
+                     data-description="La terapia con piedras calientes es una técnica milenaria que combina el poder del calor terapéutico con movimientos de masaje profundo. Las piedras volcánicas retienen el calor de manera uniforme y ayudan a relajar los músculos tensionados, mejorar la circulación sanguínea y promover una sensación de bienestar profundo.">
+                    <div class="media-container">
+                        <img src="images/piedrascalientes.jpg" alt="Masaje con Piedras Calientes" class="media-item" data-type="image">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Masaje con Piedras Calientes</h3>
+                        <p>Técnica milenaria que combina el poder de las piedras volcánicas con movimientos de masaje profundo.</p>
+                        <span class="category-tag">Terapias</span>
+                    </div>
+                </div>
+                
+                <!-- Ventosas Cupping -->
+                <div class="content-card" data-category="terapias"
+                     data-consejos='["Nunca apliques ventosas sobre piel lesionada o irritada", "La succión debe ser gradual, no abrupta", "Las marcas rojizas son normales y desaparecen en 3-7 días", "Bebe abundante agua después de la sesión", "No es recomendable si tienes problemas de coagulación"]'
+                     data-description="Las ventosas o cupping son una técnica ancestral de la medicina tradicional china que utiliza copas de vidrio, bambú o plástico para crear succión sobre la piel. Esta técnica mejora la circulación sanguínea, alivia tensiones musculares y ayuda a liberar toxinas del organismo.">
+                    <div class="media-container">
+                        <img src="images/ventosas.jpeg" alt="Ventosas Cupping" class="media-item" data-type="image">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ventosas (Cupping)</h3>
+                        <p>Técnica tradicional que mejora la circulación y alivia tensiones musculares mediante succión controlada.</p>
+                        <span class="category-tag">Terapias</span>
+                    </div>
+                </div>
+
+                <!-- Respiración para Relajación -->
+                <div class="content-card" data-category="bienestar"
+                     data-consejos='["Practica en un lugar tranquilo, sin distracciones", "Comienza con 5 minutos diarios e incrementa gradualmente", "La respiración 4-7-8: inhala 4, retén 7, exhala 8 segundos", "Mantén los hombros relajados durante todo el ejercicio", "Si sientes mareo, reduce la intensidad y respira normalmente"]'
+                     data-description="La respiración consciente es una herramienta poderosa para manejar el estrés, la ansiedad y promover un estado de calma mental. Esta práctica milenaria ayuda a activar el sistema nervioso parasimpático, reduciendo los niveles de cortisol y promoviendo la relajación profunda.">
+                    <div class="media-container">
+                        <img src="images/respiracion.jpg" alt="Técnicas de Respiración" class="media-item" data-type="image">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Respiración Consciente</h3>
+                        <p>Aprende técnicas de respiración para reducir el estrés, calmar la mente y encontrar equilibrio interior.</p>
+                        <span class="category-tag">Bienestar</span>
+                    </div>
+                </div>
+
+                <!-- Nutrición y Bienestar -->
+                <div class="content-card" data-category="nutricion">
+                    <div class="media-container">
+                        <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Nutrición y Bienestar" class="media-item" data-type="image" data-src="images/nutricion-bienestar.jpg">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nutrición Consciente para el Bienestar</h3>
+                        <p>Descubre la importancia de una alimentación equilibrada y aprende estrategias para mantener hábitos nutricionales saludables que complementen tus terapias.</p>
+                        <span class="category-tag">Nutrición</span>
+                        <div class="card-meta">
+                            <span><i class="fas fa-apple-alt"></i> Guía práctica</span>
+                            <span><i class="fas fa-heart"></i> Salud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auriculoterapia -->
+                <div class="content-card" data-category="tecnicas">
+                    <div class="media-container">
+                        <img src="images/auriculoterapia.jpg" alt="Auriculoterapia" class="media-item" data-type="image" data-src="images/auriculoterapia.jpg">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Auriculoterapia: Puntos de Acupresión</h3>
+                        <p>Mapa completo de puntos de auriculoterapia y sus aplicaciones terapéuticas. Técnica complementaria para el bienestar integral.</p>
+                        <span class="category-tag">Técnicas de masaje</span>
+                        <div class="card-meta">
+                            <span><i class="fas fa-map-marked"></i> Mapa</span>
+                            <span><i class="fas fa-hand-holding-heart"></i> Terapéutico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moxibustión -->
+                <div class="content-card" data-category="tecnicas">
+                    <div class="media-container">
+                        <img src="images/moxibustion.jpg" alt="Moxibustión" class="media-item" data-type="video" data-src="videos/moxibustion-tecnica.mp4">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Moxibustión: El Poder del Calor Terapéutico</h3>
+                        <p>Aprende sobre esta milenaria técnica china que utiliza artemisa quemada para estimular puntos específicos y fortalecer el qi vital.</p>
+                        <span class="category-tag">Técnicas de masaje</span>
+                        <div class="card-meta">
+                            <span><i class="fas fa-fire"></i> Calor terapéutico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Técnica de Estiramiento -->
+                <div class="content-card" data-category="bienestar">
+                    <div class="media-container">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Estiramientos" class="media-item" data-type="video" data-src="videos/estiramientos-matutinos.mp4">
+                        <div class="image-overlay">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rutina de Estiramientos Matutinos</h3>
+                        <p>Secuencia de movimientos suaves para despertar el cuerpo, activar la circulación y prepararte para un día lleno de energía.</p>
+                        <span class="category-tag">Bienestar general</span>
+                        <div class="card-meta">
+                            <span><i class="fas fa-sun"></i> Rutina matutina</span>
+                        </div>
+                    </div>
+                </div>
+
+       
+            
+            <!-- Call to action -->
+            <div class="content-cta">
+                <h3>¿Quieres más consejos personalizados?</h3>
+                <p>Contacta conmigo para recibir consejos específicos para tu bienestar y conocer más sobre estas técnicas.</p>
+                <a href="index.html#contacto" class="btn btn-primary">Contactanos</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Pharus</h4>
+                    <p>Centro especializado en bienestar integral a través de terapias naturales y técnicas de medicina alternativa.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/5491123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/pharus_bienestar" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="guia-bienestar.html">Tu Guía de Bienestar</a></li>
+                        <li><a href="index.html#faqs">FAQs</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="index.html#servicios">Masajes Terapéuticos</a></li>
+                        <li><a href="index.html#servicios">Acupuntura</a></li>
+                        <li><a href="index.html#servicios">Biodecodificación</a></li>
+                        <li><a href="index.html#servicios">Tarot Evolutivo</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pharus. Todos los derechos reservados.</p>
+                <p>Las terapias son complementarias y no reemplazan la atención médica profesional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para información de consejos -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h3 id="modalTitle">Título del consejo</h3>
+            </div>
+            <div class="modal-body">
+                <div id="imageContainer" class="media-container-modal">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <p id="modalDescription">Descripción del contenido</p>
+                    <div class="consejos-content">
+                        <h4>Consejos y recomendaciones:</h4>
+                        <ul id="modalConsejos">
+                            <!-- Los consejos se llenarán dinámicamente -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span id="modalCategory" class="category-tag"></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
