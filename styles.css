@@ -264,12 +264,13 @@ section {
     justify-content: center;
     text-align: center;
     background-image: 
-        radial-gradient(ellipse at center top, rgba(255, 255, 255, 0.1) 0%, transparent 70%),
-        linear-gradient(rgba(224, 247, 250, 0.8), rgba(224, 247, 250, 0.8)),
-        url('images/faro hero.jpg');
-    background-size: 100% 100%, cover, cover;
-    background-position: center top, center, center;
+        linear-gradient(rgba(224, 247, 250, 0.85), rgba(224, 247, 250, 0.85)),
+        url('images/logo.png');
+    background-size: cover, 400px auto;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .hero-content {
@@ -454,6 +455,45 @@ section {
 .service-content h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
+}
+
+.service-subtitle {
+    font-size: 1rem;
+    color: var(--turquesa);
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    opacity: 0.9;
+}
+
+.service-benefits {
+    margin: 15px 0;
+}
+
+.service-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-benefits li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--gris-oscuro);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.service-benefits li::before {
+    content: "⚪";
+    position: absolute;
+    left: 0;
+    color: var(--turquesa);
+    font-size: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Tu Guía de Bienestar */
@@ -941,6 +981,121 @@ section {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* CTA Redes Sociales */
+.cta-social-section {
+    background: linear-gradient(135deg, var(--turquesa) 0%, var(--azul-claro) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-social-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: lighthouse-glow 4s ease-in-out infinite alternate;
+}
+
+.cta-social-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-social-text {
+    flex: 1;
+    color: white;
+}
+
+.cta-social-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cta-social-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    margin-bottom: 0;
+}
+
+.cta-social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.btn-social:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.btn-social.instagram {
+    background: linear-gradient(45deg, #E4405F, #C13584, #833AB4);
+    color: white;
+}
+
+.btn-social.facebook {
+    background: #1877F2;
+    color: white;
+}
+
+.btn-social i {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .cta-social-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .cta-social-text h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-social-text p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-social-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn-social {
+        min-width: 160px;
+    }
 }
 
 /* FAQs */
