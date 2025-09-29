@@ -499,6 +499,12 @@ section {
     transition: transform 0.3s ease;
 }
 
+/* Estilo específico para auriculoterapia - menos zoom */
+img[alt="Auriculoterapia"].service-image {
+    object-fit: contain;
+    object-position: center;
+}
+
 .service-card:hover .service-image {
     transform: scale(1.05);
 }
