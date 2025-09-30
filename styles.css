@@ -449,6 +449,23 @@ section {
     transform: scale(1.005);
 }
 
+/* Marca de agua con logo de Pharus */
+.about-image::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 3;
+    pointer-events: none;
+}
+
 .about-image.in-view {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -1413,6 +1430,13 @@ footer {
         height: 380px;
         max-width: 280px;
         margin: 0 auto 30px auto;
+    }
+    
+    /* Marca de agua responsive para móviles */
+    .about-image::after {
+        width: 60px;
+        height: 60px;
+        opacity: 0.25;
     }
     
     .contact-container {
